@@ -1,4 +1,5 @@
 {
+  "homepage":"https://developerarjun450.github.io/exp-imp-react",
   "name": "@coreui/coreui-free-react-admin-template",
   "version": "5.0.0-rc.0",
   "description": "CoreUI Free React Admin Template",
@@ -19,7 +20,9 @@
     "start": "react-scripts start",
     "test": "react-scripts test",
     "test:cov": "npm test -- --coverage --watchAll=false",
-    "test:debug": "react-scripts --inspect-brk test --runInBand"
+    "test:debug": "react-scripts --inspect-brk test --runInBand",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build"
   },
   "dependencies": {
     "@coreui/chartjs": "^4.0.0-rc.0",
